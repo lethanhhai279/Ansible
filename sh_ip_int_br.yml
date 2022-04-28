@@ -7,7 +7,7 @@
     - name: Show ip
       ios_command:
         commands:
-          - show interface
+          - show interfaces
       register: output
 
     - debug: var=output.stdout_lines
